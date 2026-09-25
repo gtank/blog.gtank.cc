@@ -1,0 +1,60 @@
+baseURL = "https://blog.gtank.cc/"
+locale = "en-us"
+title = "gtank writes here"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+
+# Match Ghost's permalink scheme exactly (flat form: keys match section/taxonomy names).
+# posts -> /<slug>/ ; tags taxonomy terms -> /tag/<slug>/
+[permalinks]
+  posts = "/:slug/"       # Ghost's default post URL
+  tags  = "/tag/:slug/"   # Ghost's per-tag URL
+
+[taxonomies]
+  tag = "tags"
+
+[pagination]
+  pagerSize = 20
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true          # allow the raw HTML used in the poetry post
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+
+[params]
+  author = "George Tankersley"
+  description = "gtank writes here"
+  DateFormat = "January 2, 2006"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = false
+  defaultTheme = "auto"
+  mainSections = ["posts"]
+
+  [params.homeInfoParams]
+    Title = "gtank writes here"
+    Content = "You can't hide secrets from the future with math, but I try. Building crypto/privacy things, often in Go."
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/gtank__"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+[[menu.main]]
+  identifier = "archive"
+  name = "Archive"
+  url = "/archives/"
+  weight = 10
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 20
