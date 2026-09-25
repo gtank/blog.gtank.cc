@@ -1,0 +1,10 @@
+/* --- Home page intro -----------------------------------------------------
+   PaperMod centers the homeInfoParams block in a tall 320px box, which creates
+   a big empty margin above the social icons. Collapse it to its natural height
+   so the name + tagline sit just above the icons. The title itself is set to
+   the author's name (see homeInfoParams.Title) so it doesn't duplicate the
+   "gtank writes here" header brand. */
+.first-entry.home-info {
+    min-height: unset;
+    margin: var(--gap) 0;
+}

@@ -27,7 +27,6 @@ enableEmoji = true
 
 [params]
   author = "George Tankersley"
-  description = "gtank writes here"
   DateFormat = "January 2, 2006"
   ShowReadingTime = true
   ShowShareButtons = false
@@ -38,12 +37,12 @@ enableEmoji = true
   mainSections = ["posts"]
 
   [params.homeInfoParams]
-    Title = "gtank writes here"
-    Content = "You can't hide secrets from the future with math, but I try. Building crypto/privacy things, often in Go."
+    Title = "George Tankersley"
+    Content = "You can't hide secrets from the future with math, but I try."
 
   [[params.socialIcons]]
-    name = "twitter"
-    url = "https://twitter.com/gtank__"
+    name = "bluesky"
+    url  = "https://bsky.app/profile/gtank.bsky.social"
   [[params.socialIcons]]
     name = "rss"
     url = "index.xml"
